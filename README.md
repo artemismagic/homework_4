@@ -79,10 +79,10 @@ This homework is graded based on the following criteria:
 You are required to submit BOTH of the following for review:
 
 * The URL of the functional, deployed application.
-* 
+* file:///Users/katejulia/Desktop/uw_bootcamp/homework/homework_4/index.html
 
 * The URL of the GitHub repository, with a unique name and a readme describing the project.
-
+* https://github.com/artemismagic/homework_4
 ---
 
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
