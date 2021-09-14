@@ -1,88 +1,88 @@
-How do you deliver this? Here are some guidelines:
+# 04 Web APIs: Code Quiz
 
-* Play proceeds as follows:
+## Your Task
 
-  * The user arrives at the landing page and is presented with a call-to-action to "Start Quiz." Also note the navigation option to "View Highscores" and the "Time" value set at 0.
+At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
 
-  * Clicking the "Start Quiz" button presents the user with a series of questions. The timer is initialized with a value and immediately begins countdown.
+To help familiarize you with these tests and allow you to use the skills covered in this unit, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
 
-  * Score is calculated by time remaining. Answering quickly and correctly results in a higher score. Answering incorrectly results in a time penalty (for example, 15 seconds are subtracted from time remaining).
+## User Story
 
-  * When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in `localStorage`.
-
-* Your application should also be responsive, ensuring that it adapts to multiple screen sizes.
-
-* Refer to the animated GIF below for a demonstration of the application functionality.
-
-![code quiz](./Assets/04-Web-APIs-homework-demo.gif)
-
-
-### Hints
-
-* Store your questions as an array of objects in a separate file, `questions.js`, that follows this format:
-
-```js
-var questions = [
-  {
-    title: "Commonly used data types DO NOT include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    answer: "alerts"
-  },
-  {
-    title: "The condition in an if / else statement is enclosed within ____.",
-    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-    answer: "parentheses"
-  },
-  ///etc.
-];
+```
+AS A coding boot camp student
+I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+SO THAT I can gauge my progress compared to my peers
 ```
 
-* The length of the array in `questions.js` determines the length of play. Fifteen seconds per question is a good estimate, so 5 questions will result in a length of play of 75 seconds.
+## Acceptance Criteria
 
+```
+GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a question
+WHEN I answer a question
+THEN I am presented with another question
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over
+WHEN the game is over
+THEN I can save my initials and my score
+```
 
-## Minimum Requirements
+## Mock-Up
 
-* Functional, deployed application.
+The following animation demonstrates the application functionality:
 
-* GitHub repository with README describing project.
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
 
-* The first view of the application displays a button that starts the quiz.
+## Grading Requirements
 
-* Clicking the start button displays a series of questions.
+This homework is graded based on the following criteria: 
 
-* Once the quiz begins, a timer starts.
+### Technical Acceptance Criteria: 40%
 
-* If a question is answered incorrectly, additional time is subtracted from the timer.
+* Satisfies all of the preceding acceptance criteria.
 
-* The timer stops when all questions have been answered or the timer reaches 0.
+### Deployment: 32%
 
-* After the game ends, the user can save their initials and score to a highscores view using local storage.
+* Application deployed at live URL.
 
-## Bonus
+* Application loads with no errors.
 
-* Add audio files to alert the user of correct or incorrect answers. Be sure to include the appropriate license.
+* Application GitHub URL submitted.
 
-* Customize the application theme.
+* GitHub repository contains application code.
 
-* Create multiple quizzes and an option for users to choose between them.
+### Application Quality: 15%
 
-* Add the application to your portfolio.
+* Application user experience is intuitive and easy to navigate.
 
+* Application user interface style is clean and polished.
 
-## Commit Early and Often
+* Application resembles the mock-up functionality provided in the homework instructions.
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+### Repository Quality: 13%
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+* Repository has a unique name.
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+* Repository follows best practices for file structure and naming conventions.
 
-Follow these guidelines for committing:
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+* Repository contains multiple descriptive commit messages.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+* Repository contains quality readme file with description, screenshot, and link to deployed application.
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+## Review
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+You are required to submit BOTH of the following for review:
+
+* The URL of the functional, deployed application.
+* 
+
+* The URL of the GitHub repository, with a unique name and a readme describing the project.
+
+---
+
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
